@@ -8,24 +8,50 @@
 .nav {
   text-align: center;
   height: 80px;
+  display: flex;
 }
 
 .nav__list {
+  outline: 1px solid tomato;
   display: inline-block;
-  margin: 0;
   list-style: none;
+
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
 
 .nav__contact {
+  outline: 1px solid tomato;
   display: inline-block;
-  margin: 0;
   list-style: none;
+
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
 
 .logo {
-  margin: 0;
+  outline: 1px solid tomato;
+  margin: 24px 93px 25px 0;
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
 
+.nav__list-item {
+  margin: 32px 50px 32px 0;
+  padding: 0;
+}
+
+.nav__list-item:last-child {
+  margin-right: 344px;
+}
+
+.nav__contact-item {
+  margin: 32px 50px 32px 0;
+  padding: 0;
+}
 
 .nav__contact-link,
 .nav__list-link {
