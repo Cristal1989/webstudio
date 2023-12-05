@@ -1,0 +1,33 @@
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.nav {
+  text-align: center;
+  height: 80px;
+}
+
+.nav__list {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+}
+
+.nav__contact {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+}
+
+.logo {
+  margin: 0;
+}
+
+
+.nav__contact-link,
+.nav__list-link {
+  text-decoration: none;
+}
