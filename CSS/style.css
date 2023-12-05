@@ -2,6 +2,7 @@
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  background-color: brown;
 }
 
 
@@ -19,6 +20,7 @@
   display: flex;
   align-items: center;
   padding: 0;
+  font-size: 14px;
 }
 
 .nav__contact {
@@ -28,7 +30,9 @@
 
   display: flex;
   align-items: center;
-  padding: 0;
+  padding: 8px 0 7px 0;
+  margin-right: 0;
+  font-size: 14px;
 }
 
 .logo {
@@ -37,6 +41,7 @@
   display: flex;
   align-items: center;
   padding: 0;
+  font-size: 26px;
 }
 
 .nav__list-item {
@@ -51,6 +56,10 @@
 .nav__contact-item {
   margin: 32px 50px 32px 0;
   padding: 0;
+}
+
+.nav__contact-item:last-child {
+  margin-right: 0;
 }
 
 .nav__contact-link,
