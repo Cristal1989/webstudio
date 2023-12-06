@@ -14,6 +14,7 @@ ol {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .container {
@@ -318,16 +319,29 @@ ol {
   line-height: normal;
   letter-spacing: 1.08px;
 
+  margin: 0;
+  padding: 0;
+  margin-top: 94px;
+
 }
 
 .teamlist {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: row;
+
 }
 
-.team__list-item {}
+.team__list-item {
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  margin: 50px 40px 94px 0;
+  border: none;
+}
+
+.team__list-item:last-child {
+  margin-right: 0;
+}
 
 .team__name {
   color: var(--text-color-black);
@@ -338,6 +352,7 @@ ol {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin-top: 30px;
 }
 
 .team__job {
@@ -349,4 +364,5 @@ ol {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin: 10px 0 30px 0;
 }
