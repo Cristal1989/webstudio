@@ -1,68 +1,352 @@
+:root {
+  /* color: var(--main-color) */
+  --text-color-black: #000;
+  --text-color-blue: #2196F3;
+  --text-color-white: #FFF;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: brown;
+  background-color: var(--text-color-white);
 }
 
-
+/* ========== Navigation======== */
 .nav {
-  text-align: center;
   height: 80px;
-  display: flex;
-}
-
-.nav__list {
-  outline: 1px solid tomato;
-  display: inline-block;
-  list-style: none;
 
   display: flex;
-  align-items: center;
-  padding: 0;
-  font-size: 14px;
-}
-
-.nav__contact {
-  outline: 1px solid tomato;
-  display: inline-block;
-  list-style: none;
-
-  display: flex;
-  align-items: center;
-  padding: 8px 0 7px 0;
-  margin-right: 0;
-  font-size: 14px;
+  text-align: center;
 }
 
 .logo {
-  outline: 1px solid tomato;
   margin: 24px 93px 25px 0;
   display: flex;
   align-items: center;
-  padding: 0;
+
+  color: var(--text-color-blue);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Raleway;
   font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+
+  cursor: pointer;
+}
+
+.logoblack {
+  color: var(--text-color-black);
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.nav__list {
+  display: inline-block;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 32px 0 32px 0;
+  margin-right: 387px;
+}
+
+.nav__contact {
+  display: inline-block;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0;
+  padding: 0;
+  margin: 32px 0 32px 0;
+
 }
 
 .nav__list-item {
-  margin: 32px 50px 32px 0;
-  padding: 0;
-}
-
-.nav__list-item:last-child {
-  margin-right: 344px;
+  padding-right: 50px;
 }
 
 .nav__contact-item {
-  margin: 32px 50px 32px 0;
-  padding: 0;
+  padding-right: 50px;
+}
+
+.nav__contact-link {
+  color: var(--text-color-black);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.nav__list-link {
+  color: var(--text-color-black);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.nav__list-item:last-child {
+  padding-right: 0;
 }
 
 .nav__contact-item:last-child {
-  margin-right: 0;
+  padding-right: 0;
 }
 
 .nav__contact-link,
 .nav__list-link {
   text-decoration: none;
+  cursor: pointer;
+}
+
+.nav__list-link:hover {
+  color: var(--text-color-blue);
+}
+
+.nav__contact-link:hover {
+  color: var(--text-color-blue);
+}
+
+/* ======== Ефективні рішення===== */
+
+.buisnes {
+  background-color: #2F303A;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin: 0;
+}
+
+.buisnes__h1 {
+  color: var(--text-color-white);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+
+  height: 120px;
+  width: 696px;
+  margin: 200px 452px 30px 236px;
+
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buisnes__button-link {
+  color: var(--text-color-white);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.96px;
+
+  background-color: rgba(33, 150, 243, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  flex-shrink: 0;
+  border-radius: 4px;
+  height: 50px;
+  width: 216px;
+  margin: 0 692px 200px 477px;
+  padding: 10px 28px;
+
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  cursor: pointer;
+}
+
+/* ========Наші переваги======== */
+
+.perevagi {
+  margin: 0;
+  padding: 0;
+  margin-top: 94px;
+  height: 98px;
+
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+.perevagi__list {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.perevagi__list-item {
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.perevagi__list-item:last-child {
+  margin-right: 0;
+}
+
+.perevagi__h4 {
+  color: var(--text-color-black);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+
+  margin: 0 0 10px 0;
+}
+
+.perevagi__par {
+  color: #757575;
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+
+  margin: 0;
+}
+
+/* ======Чим ми займаємось======= */
+
+.chemzanyati {
+  margin: 0;
+  padding: 0;
+  margin-top: 94px;
+
+
+}
+
+.chemzanyati__h1 {
+  color: var(--text-color-black);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.chemzanyati__foto {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  width: 370px;
+  height: 294px;
+  flex-shrink: 0;
+  margin-bottom: 94px;
+  margin: 0;
+  padding: 0;
+}
+
+.chemzanyati__foto-item {
+  padding-right: 45px;
+}
+
+.chemzanyati__foto-item:last-child {
+  padding-right: 0;
+}
+
+/* =========Наша команда======= */
+
+.team {
+  margin: 0;
+  padding: 0;
+  height: 648px;
+  background-color: #F5F4FA;
+}
+
+.team__h1 {
+  color: var(--text-color-black);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+
+}
+
+.teamlist {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.team__list-item {}
+
+.team__name {
+  color: var(--text-color-black);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.team__job {
+  color: #757575;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
 }
