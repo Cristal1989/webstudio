@@ -5,6 +5,7 @@
   --text-color-white: #FFF;
 }
 
+
 * a {
   text-decoration: none;
 }
@@ -17,17 +18,27 @@ ol {
   display: flex;
 }
 
+
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--text-color-white);
+}
+
+.hedaer {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+  padding: 0;
 }
 
 /* ========== Navigation======== */
+
+
+
 .nav {
   height: 80px;
-
   display: flex;
   text-align: center;
 }
@@ -136,10 +147,15 @@ ol {
 
 /* ======== Ефективні рішення===== */
 
-.buisnes {
-  background-color: #2F303A;
+.buisnes__sector {
+  width: 1600px;
   height: 600px;
+  background-color: #2F303A;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.buisnes__div {
   display: flex;
   flex-direction: column;
 
@@ -198,6 +214,12 @@ ol {
 }
 
 /* ========Наші переваги======== */
+.perevagi__section {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
 
 .perevagi {
   margin: 0;
@@ -256,13 +278,17 @@ ol {
 }
 
 /* ======Чим ми займаємось======= */
+.chemzanyati__sector {
+  width: 1600px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .chemzanyati {
   margin: 0;
   padding: 0;
   margin-top: 94px;
-
-
 }
 
 .chemzanyati__h1 {
@@ -301,12 +327,18 @@ ol {
 }
 
 /* =========Наша команда======= */
+.team__section {
+  width: 1600px;
+  height: 648px;
+  background-color: #F5F4FA;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .team {
   margin: 0;
   padding: 0;
-  height: 648px;
-  background-color: #F5F4FA;
+
 }
 
 .team__h1 {
@@ -368,12 +400,12 @@ ol {
 }
 
 /* ========= footer ====== */
-
 .footer {
-  background-color: rgba(47, 48, 58, 1);
+  width: 1600px;
   height: 252px;
-  margin: 0;
-  padding: 0;
+  background-color: rgba(47, 48, 58, 1);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logowhite {
