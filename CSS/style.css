@@ -565,8 +565,8 @@ ol {
 }
 
 .portfolio__buttons-item:hover {
+  color: #fff;
   background: rgba(33, 150, 243, 1);
-  color: rgba(255, 255, 255, 1);
 }
 
 .portfolio__buttons-item:focus {
