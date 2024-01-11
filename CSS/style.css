@@ -149,9 +149,13 @@ ol {
 .buisnes__sector {
   width: 1600px;
   height: 600px;
-  background-color: #2F303A;
   margin-left: auto;
   margin-right: auto;
+  background: rgba(47, 48, 58, 0.40);
+  background-image: url('../image/teamall.png');
+
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .buisnes__div {
@@ -231,6 +235,15 @@ ol {
   align-items: center;
 }
 
+.perevagi-pic {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #F5F4FA;
+  padding: 25px 100px 25px 100px;
+  margin-bottom: 30px;
+}
+
 .perevagi__list {
   display: flex;
   align-items: start;
@@ -303,6 +316,7 @@ ol {
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
+
 }
 
 .chemzanyati__foto {
@@ -400,33 +414,27 @@ ol {
 
 .team__social-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .team__social-item {
-  /* display: flex; */
-  margin-top: 28px;
-  margin-right: 34px;
-  margin-bottom: 42px;
+  margin-top: 16px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  height: 44px;
+  width: 44px;
 }
 
 .team__social-item:nth-child(1) {
-  margin-left: 44px;
+  margin-left: 32px;
 }
 
 .team__social-item:nth-child(4) {
-  margin-right: 44px;
+  margin-right: 32px;
 }
 
-.team__social-pic:hover {
+.team__social-item:hover {
   background-color: var(--text-color-blue);
   border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  height: 44px;
-  width: 44px;
-
 }
 
 .team__social-pic {
@@ -435,10 +443,55 @@ ol {
   fill: rgba(175, 177, 184, 1);
   justify-content: center;
   align-items: center;
+  margin: 12px;
 }
 
+/* ===========clients====== */
+.clients {
+  margin: 0;
+  padding: 0;
+}
 
+.clients__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.clients__item {
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+
+.clients-pic {
+  padding: 16px 32px 16px 32px;
+}
+
+.clients__item:hover {
+
+  border: 1px solid var(--text-color-blue);
+}
+
+.clients-pic:hover {
+  fill: var(--text-color-blue);
+}
+
+.clients__h2 {
+  color: var(--text-color-black);
+
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
 
 /* ========= footer ====== */
 .footer {
