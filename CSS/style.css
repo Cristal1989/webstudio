@@ -405,27 +405,39 @@ ol {
 }
 
 .team__social-item {
-  display: flex;
-}
-
-.team__social-pic {
-  width: 20px;
-  height: 20px;
+  /* display: flex; */
   margin-top: 28px;
   margin-right: 34px;
   margin-bottom: 42px;
+}
+
+.team__social-item:nth-child(1) {
   margin-left: 44px;
-  border: 1px solid black;
+}
+
+.team__social-item:nth-child(4) {
+  margin-right: 44px;
+}
+
+.team__social-pic:hover {
+  background-color: var(--text-color-blue);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
 
 }
 
-/* .team__social-pic:first-child {
-  margin-left: 0px;
+.team__social-pic {
+  height: 20px;
+  width: 20px;
+  fill: rgba(175, 177, 184, 1);
+  justify-content: center;
+  align-items: center;
 }
 
-.team__social-pic:last-child {
-  margin-right: 0px;
-} */
+
 
 
 /* ========= footer ====== */
