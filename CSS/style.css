@@ -541,6 +541,15 @@ ol {
   margin-right: auto;
 }
 
+.footer__div {
+  display: flex;
+}
+
+.footer__logolist {
+  display: flex;
+  flex-direction: column;
+}
+
 .logowhite {
   color: var(--text-color-white);
   font-family: Raleway;
@@ -603,6 +612,32 @@ ol {
 
 .footer__item-link:hover {
   color: rgba(33, 150, 243, 1);
+}
+
+.footer__social {
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.footer__social-text {
+  color: var(--text-color-white);
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-top: 22px;
+  margin-left: 10px;
+}
+
+.linkfootersocial {
+  color: var(--text-color-white);
 }
 
 /* ======== portfolio==== */
