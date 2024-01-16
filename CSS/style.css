@@ -6,6 +6,13 @@
   --socials-opacity: rgba(255, 255, 255, 0.1);
 }
 
+body {
+  height: 100%;
+}
+
+img {
+  vertical-align: 0;
+}
 
 * a {
   text-decoration: none;
@@ -767,6 +774,7 @@ ol {
 }
 
 .portfolio__image-list {
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -776,6 +784,7 @@ ol {
 .porfolio__overley-place {
   position: relative;
   overflow: hidden;
+  max-height: 294px;
 }
 
 .portfolio__overley {
